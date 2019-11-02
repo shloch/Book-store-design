@@ -1,13 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Yeon+Sung&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 body {
   margin: 0;
   padding: 0;
-}
+  font-family: 'Raleway', sans-serif; }
 
+/*------ Banner ---- */
 #upper-section {
   border: 1px solid black;
-  min-height: 800px;
-  background-image: url("../images/banner.jpg");
+  min-height: 290px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner3.jpg");
   background-repeat: no-repeat;
-}
+  background-position: center; }
+  @media screen and (max-width: 645px) {
+    #upper-section {
+      padding-right: 5%;
+      padding-left: 5%; }
+      #upper-section h2 {
+        color: yellow; } }
+  #upper-section div[id="image-container"] {
+    text-align: center;
+    margin: 5% 0 0 0;
+    color: aliceblue; }
+    #upper-section div[id="image-container"] h2 {
+      font-family: 'Yeon Sung', cursive;
+      font-size: 2.9em; }
+
+/*------ serachzone ---- */
+main[id="search-zone"] {
+  text-align: center; }
+  main[id="search-zone"] h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #1FABCD;
+    font-size: 1.9em;
+    font-weight: 100; }
+  main[id="search-zone"] select[class="upper-search"] {
+    width: 30%;
+    border-radius: 3px;
+    padding: 0.5% 0 0.5% 2%;
+    font-size: 1.14em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pencil.jpeg");
+    color: white;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+    @media screen and (max-width: 559px) {
+      main[id="search-zone"] select[class="upper-search"] {
+        width: 50%; } }
+    main[id="search-zone"] select[class="upper-search"] option {
+      color: black; }
+
+/*------ bookzone ---- */
+div[id="book-zone"] {
+  min-height: 590px;
+  /*background-color: #F3F7FB;*/
+  background-color: #F4F8FB;
+  padding-bottom: 10px; }
+  div[id="book-zone"] .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto; }
+    div[id="book-zone"] .flex-container .books {
+      background-color: white;
+      width: 12%;
+      /*max-height: 200px;*/
+      margin-right: 50px;
+      margin-bottom: 10px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 15px; }
+      @media screen and (max-width: 1000px) {
+        div[id="book-zone"] .flex-container .books {
+          width: 20%;
+          margin-right: 2.5%; } }
+      @media screen and (max-width: 700px) {
+        div[id="book-zone"] .flex-container .books {
+          width: 30%;
+          margin-right: 2.9%; } }
+      @media screen and (max-width: 461px) {
+        div[id="book-zone"] .flex-container .books {
+          width: 54%;
+          margin-right: 3.9%; } }
+      div[id="book-zone"] .flex-container .books img {
+        width: 80%;
+        min-height: 100px;
+        padding: 5%; }
+      div[id="book-zone"] .flex-container .books hr {
+        width: 100%;
+        height: 2px;
+        background-color: #00A8CE; }
+      div[id="book-zone"] .flex-container .books .book-name {
+        font-weight: 700;
+        color: #373237; }
+      div[id="book-zone"] .flex-container .books .book-category {
+        font-size: 0.98em;
+        color: #8A8C90; }
+  div[id="book-zone"] h2 {
+    padding-top: 2%;
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: 100;
+    font-size: 2.5em;
+    color: #8A8C90;
+    font-family: 'Quicksand', sans-serif; }
+
+/*------ book form ---- */
+div[id="book-form"] {
+  padding-top: 1.67%;
+  min-height: 300px; }
+  div[id="book-form"] h3 {
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: 100;
+    color: #8A8C90;
+    font-family: 'Quicksand', sans-serif; }
+  div[id="book-form"] input {
+    width: 30%;
+    padding: 0.5% 0 0.5% 2%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 1.14em;
+    color: #373237; }
+    @media screen and (max-width: 830px) {
+      div[id="book-form"] input {
+        width: 80%; } }
+  div[id="book-form"] select[class="lower-search"] {
+    padding: 0.6% 0 0.5% 2%;
+    font-size: 1.4em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.xl.thumbs.canstockphoto.com%2Fpencil-holder-full-of-pencils-black-pencil-holder-full-of-colorful-pencils-isolated-over-white-picture_csp17563013.jpg&f=1&nofb=1");
+    color: white;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    width: 15%; }
+    @media screen and (max-width: 830px) {
+      div[id="book-form"] select[class="lower-search"] {
+        width: 50%;
+        margin-top: 1.5%; } }
+    div[id="book-form"] select[class="lower-search"] option {
+      color: black; }
+  div[id="book-form"] button {
+    padding: 0.6%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #F3F7FB;
+    background-color: #1FABCD; }
+    @media screen and (max-width: 830px) {
+      div[id="book-form"] button {
+        width: 20%;
+        font-size: 21px; } }
+
+footer {
+  text-align: center;
+  font-size: 0.69em;
+  background-color: #8A8C90;
+  margin: 0;
+  color: white; }
+  footer p {
+    margin: 0; }
+  footer img {
+    height: 12px; }
 
 /*# sourceMappingURL=main.css.map */
