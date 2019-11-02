@@ -1,11 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Yeon+Sung&display=swap');
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
+
+/*------ Banner ---- */
 #upper-section{
     border: 1px solid black;
-    min-height: 800px;
-    background-image: url("../images/banner.jpg");
+    min-height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner3.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (max-width: 645px) {
+        padding-right: 5%;
+        padding-left: 5%;
+        h2 {     
+            color: yellow;
+        }
+        
+    }
+    div[id="image-container"] {
+        text-align: center;
+        margin: 11% 0 0 0;
+        color: aliceblue;
+        
+        h2 {
+            font-family: 'Yeon Sung', cursive;
+            font-size: 2.9em;
+        }
+    }
+    
+
+}
+
+/*------ serachzone ---- */
+div[id="search-zone"] {
+    text-align: center;
+    border: 1px solid black;
+    padding-bottom: 2%;
+    h3 {
+        font-family: 'Yeon Sung', cursive;
+        color: #1FABCD;
+        font-size: 1.9em;
+    }
+    select {
+        width: 30%;
+        margin: 1.4% 0 0 0;
+        border-radius: 3px;
+        padding: 2% 0 0 10%;
+        font-size: 1.14em;
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/pencil.jpeg");
+        color: white;
+        font-weight: bold;
+        @media screen and (max-width: 559px) {
+            width: 50%;  
+        }
+    }
     
 }
