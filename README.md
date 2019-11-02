@@ -20,3 +20,6 @@
 
 ## Live Demo
 https://raw.githack.com/Shimele/Book-store-design/developement/index.html
+
+## Screenshot 
+![alt text](https://raw.githack.com/Shimele/Book-store-design/developement/screenshot.jpg)
