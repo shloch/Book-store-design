@@ -22,4 +22,4 @@
 https://raw.githack.com/Shimele/Book-store-design/developement/index.html
 
 ## Screenshot 
-![alt text](https://raw.githack.com/Shimele/Book-store-design/developement/screenshot.jpg)
+![alt text](https://github.com/Shimele/Book-store-design/blob/master/screenshot.jpg)
