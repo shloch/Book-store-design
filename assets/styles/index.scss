@@ -38,16 +38,15 @@ body{
 }
 
 /*------ serachzone ---- */
-div[id="search-zone"] {
+main[id="search-zone"] {
     text-align: center;
-    padding-bottom: 2%;
     h3 {
         font-family: 'Quicksand', sans-serif;
         color: #1FABCD;
         font-size: 1.9em;
         font-weight: 100;
     }
-    select {
+    select[class="upper-search"] {
         width: 30%;
         border-radius: 3px;
         padding: 0.5% 0 0.5% 2%;
@@ -68,8 +67,11 @@ div[id="search-zone"] {
 
 /*------ bookzone ---- */
 div[id="book-zone"] {
+    
     min-height: 590px;
-    background-color: #F3F7FB;
+    /*background-color: #F3F7FB;*/
+    background-color: #F4F8FB;
+    padding-bottom: 10px;
     .flex-container{
         display: flex;
         flex-direction: row;
@@ -86,6 +88,19 @@ div[id="book-zone"] {
             text-align: center;
             padding-top: 10px;
             padding-bottom: 15px;
+
+            @media screen and (max-width: 1000px) {
+                width: 20%;
+                margin-right: 2.5%;
+            }
+            @media screen and (max-width: 700px) {
+                width: 30%;
+                margin-right: 2.9%;
+            }
+            @media screen and (max-width: 461px) {
+                width: 54%;
+                margin-right: 3.9%;
+            }
             
             img{
                 width: 80%;
@@ -110,14 +125,80 @@ div[id="book-zone"] {
         
     }
     h2{
+        padding-top: 2%;
         text-align: center;
         margin-bottom: 3%;
         font-weight: 100;
         font-size: 2.5em;
         color: #8A8C90;
         font-family: 'Quicksand', sans-serif;
+    }  
+    
+}
+
+/*------ book form ---- */
+
+div[id="book-form"] {
+    padding-top: 1.67%;
+    min-height: 300px;
+    h3 {
+        text-align: center;
+        margin-bottom: 3%;
+        font-weight: 100;
+        color: #8A8C90;
+        font-family: 'Quicksand', sans-serif;
     }
-    
-    
-    
+    input {
+        width: 30%;
+        padding: 0.5% 0 0.5% 2%;
+        @include round-border;
+        font-size: 1.14em;
+        color: #373237;
+        @media screen and (max-width: 830px) {
+            width: 80%;
+        }
+    }
+    select[class="lower-search"] {
+              
+        padding: 0.6% 0 0.5% 2%;
+        font-size: 1.4em;
+        background-image:linear-gradient(rgba(0,0,0,0.23), rgba(0,0,0,0.23)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.xl.thumbs.canstockphoto.com%2Fpencil-holder-full-of-pencils-black-pencil-holder-full-of-colorful-pencils-isolated-over-white-picture_csp17563013.jpg&f=1&nofb=1");
+        color: white;
+        font-weight: bold;
+        @include round-border;
+        width: 15%;
+        @media screen and (max-width: 830px) {
+            width: 50%;
+            margin-top: 1.5%;
+        }
+        
+        option{
+            color: black;
+        }
+
+        
+    }
+    button {
+        padding: 0.6%;
+        @include round-border;
+        font-size: 18px;
+        color: #F3F7FB;
+        background-color: #1FABCD;
+        @media screen and (max-width: 830px) {
+            width: 20%;
+            font-size: 21px;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 0.69em;
+    background-color: #8A8C90;
+    margin:0;
+    color: white;
+    p {margin: 0}
+    img {
+        height:12px;
+    }
 }
