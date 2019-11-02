@@ -16,7 +16,10 @@
 </p>
 
 
+### Technologies
 
+- HTML
+- CSS/SASS
 
 ## Live Demo
 https://raw.githack.com/Shimele/Book-store-design/developement/index.html
