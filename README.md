@@ -26,3 +26,13 @@ https://raw.githack.com/Shimele/Book-store-design/developement/index.html
 
 ## Screenshot 
 ![alt text](https://github.com/Shimele/Book-store-design/blob/master/screenshot.jpg)
+
+## Contributors
+
+### 👤 **SHEY Louis CHIA**
+
+- Github: [shloch](https://github.com/shloch)
+- Twitter: [@shloch](https://twitter.com/shloch)
+- Linkedin: [/in/shey-louis-chia](https://www.linkedin.com/in/shey-louis-chia)
+- Email: shloch2007@yahoo.fr
+
